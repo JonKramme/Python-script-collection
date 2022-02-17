@@ -65,10 +65,21 @@ class Node:
 
 
 #Test Driver-code
-N = Node(1)
-N.insert_left(2)
-N.left().insert_left(4)
-N.left().insert_right(5)
-N.insert_right(3)
+N = Node(25)
+N.insert_left(15)
+N.left().insert_left(10)
+N.left().left().insert_left(4)
+N.left().left().insert_right(12)
+N.left().insert_right(22)
+N.left().right().insert_left(18)
+N.left().right().insert_right(24)
 
-N.breadth_first_query()
+N.insert_right(50)
+N.right().insert_left(35)
+N.right().left().insert_left(31)
+N.right().left().insert_right(44)
+N.right().insert_right(70)
+N.right().right().insert_left(66)
+N.right().right().insert_right(90)
+
+#N.postorder_query()
